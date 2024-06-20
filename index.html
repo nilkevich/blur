@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Blur App</title>
+    <title>АКТ17.ПРОЯСНИЛОСЬ</title>
     <link rel="stylesheet" href="styles.css">
+		<link rel="icon" href="./assets/favicon.ico">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Image Blur App</h1>
-        <input type="file" id="imageUpload" accept="image/*">
+        <h1>ПРОЯСНИЛОСЬ!</h1>
+        <label for="imageUpload" class="custom-file-upload">Загрузите ваш логотип</label>
+        <input type="file" id="imageUpload" class="hidden-file-input" accept="image/*">
+        <span class="file-name" id="fileName">Файл не выбран</span>
         <div class="controls">
-            <label for="blurRange">Blur Level:</label>
-            <input type="range" id="blurRange" min="0" max="20" value="0">
+            <label for="blurRange">Сила размытия:</label>
+            <input type="range" id="blurRange" min="0" max="100" value="0">
+            <span id="blurValue">0</span>%
         </div>
-        <div class="image-container">
+        <div class="image-container hidden" id="imageContainer">
             <img id="uploadedImage" src="" alt="Upload an image">
         </div>
+				<div class="text-container hidden">
+					<p>Желаете, чтобы вашу компанию замечали всегда?</p>
+					<p>Обращайтесь в АКТ17!</p>
+				</div>
     </div>
     <script src="script.js"></script>
 </body>

@@ -1,11 +1,14 @@
+
+
 body {
-	font-family: Arial, sans-serif;
+	font-family: Montserrat, sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	margin: 0;
 	background-color: #f4f4f4;
+	font-weight: 400;
 }
 
 .container {
@@ -20,13 +23,58 @@ body {
 	margin-top: 20px;
 }
 
-.image-container {
-	margin-top: 20px;
-}
-
 img {
 	max-width: 100%;
 	max-height: 500px;
 	border-radius: 8px;
 	transition: filter 0.3s ease;
+}
+
+.hidden {
+	display: none;
+}
+
+.hidden-file-input {
+	display: none;
+}
+
+.custom-file-upload {
+	display: inline-block;
+	padding: 6px 12px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #f9f9f9;
+}
+
+.file-name {
+	margin-left: 10px;
+	font-style: italic;
+}
+
+#blurRange {
+	-webkit-appearance: none;
+	 appearance: none;
+	 cursor: pointer;
+	 background: #cccccc;
+	 border-radius: 0.5rem;
+	 height: 10px; 
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+   appearance: none;
+   background-color: #E3223F;
+   height: 13px;
+   width: 13px;
+	 border-radius: 50%;
+}
+
+
+input[type="range"]::-moz-range-thumb {
+	background: #E3223F;
+}
+
+.image-container {
+	margin-top: 20px;
 }
